@@ -37,15 +37,12 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet
-        tweet={tweetsArray[0].user.name}
-        profile={tweetsArray[0].user.image}
-        handle={tweetsArray[0].user.handle}
-        message={tweetsArray[0].message}
-        timestamp={tweetsArray[0].timestamp}
-         />
+      <Tweet tweet={tweetsArray[0]} />
+      <Tweet tweet={tweetsArray[1]} />
+      <Tweet tweet={tweetsArray[2]} />
     </div>
   );
 }
-
 export default App;
+
+
